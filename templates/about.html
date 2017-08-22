@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About-Us Page | Official Stackshouse Creative Studio{% endblock title %}
+{% block sitecontent %}
+      <!--//================breadcrumb start==============//-->
+      <section class="breadcamb-area">
+         <div class="main_breadcamb positionR">
+            <figure class="slider-image positionR">
+               <img src="{% static 'assets/img/bradcamb/banner3.png' %}" alt=""/>
+            </figure>
+            <div class="breadcamb_content positionA text-center">
+               <div class="container">
+                  <div class="row">
+                     <div class="all_heading positionR">
+                        <h1>about </h1>
+                        <h2> <span>About</span> Me</h2>
+                        <ol class="breadcrumb">
+                           <li class="breadcrumb-item"><a href="#">Home</a></li>
+                           <li class="breadcrumb-item active">About</li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--//================About start==============//-->		
+      <section id="about-section" class="pad-top100 pad-bottom100">
+         <div class="main_aboutus">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-12 pull-right">
+                     <figure>
+                        <img src="{% static 'assets/img/about/about1.jpg' %}" alt=""/>
+                     </figure>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                     <div class="all_section_heading">
+                        <h1>about me</h1>
+                        <h2><span>Creative</span> Studio</h2>
+                     </div>
+                     <div class="aboutus_content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                           industry. Lorem Ipsum has been the industry's standard dummy text
+                           ever since the 1500s electronic typesetting.
+                        </p>
+                        <p> When an unknown printer took a galley of type and scrambled it to
+                           make a type specimen book. It has survived not only five centuries,
+                           but also the leap into electronic typesetting,
+                        </p>
+                        <a href="" class="itg-button">learn more</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--//================About end==============//-->
+{% endblock sitecontent %}

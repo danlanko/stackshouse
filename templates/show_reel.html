@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}ShowReel | Official StacksHouse Creative Studio {% endblock title %}
+{% block sitecontent %}
+      <!--//================breadcrumb start==============//-->
+      <section class="breadcamb-area">
+         <div class="main_breadcamb positionR">
+            <figure class="slider-image positionR">
+               <img src="{% static 'assets/img/bradcamb/banner6.png' %}" alt=""/>
+            </figure>
+            <div class="breadcamb_content positionA text-center">
+               <div class="container">
+                  <div class="row">
+                     <div class="all_heading positionR">
+                        <h1>our work</h1>
+                        <h2> <span>Gallery</span></h2>
+                        <ol class="breadcrumb">
+                           <li class="breadcrumb-item"><a href="#">Home</a></li>
+                           <li class="breadcrumb-item active">Gallery</li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--//================gallery start=============//-->	
+      <section id="gallery-section" class="pad-top100 pad-bottom70 grid-gallery">
+         <div class="container">
+            <div class="row">
+               <div class="all_heading positionR">
+                  <h1> portfolio </h1>
+                  <h2> <span>Photo</span> Gallery</h2>
+               </div>
+               <div class="mixitup-btn mixitup_content col-xs-12 marB30">
+                  <a class="filter"  data-filter="all">ALL</a>
+                  <a class="filter"  data-filter=".men">Men</a>
+                  <a class="filter"  data-filter=".women">Women</a>
+                  <a class="filter"  data-filter=".Camera">Camera</a>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+         <div class="row">
+         <div class="gallery mar-top20 grid positionR" id="mixItUp">
+            <div class="container-fluid">
+               <div class="col-md-4 col-sm-4 col-xs-12 mar-bottom30 mix men">
+                  <div class="gallery_image">
+                     <figure class="effect-bubba positionR">
+                        <img src="{% static 'assets/img/gallery/gallery1.jpg' %}" alt="">
+                        <figcaption>
+                           <h2><span class="icon arrows-expand"><a href="">a</a></span></h2>
+                           <a class="fancybox" data-fancybox-group="group" href="{% static 'assets/img/gallery/gallery2.jpg' %}">View more</a>
+                        </figcaption>
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-12 mar-bottom30 mix camera">
+                  <div class="gallery_image">
+                     <figure class="effect-bubba positionR">
+                        <img src="{% static 'assets/img/gallery/gallery3.jpg' %}" alt="">
+                        <figcaption>
+                           <h2><span class="icon arrows-expand"><a href="">a</a></span></h2>
+                           <a class="fancybox" data-fancybox-group="group" href="{% static 'assets/img/gallery/gallery4.jpg' %}">View more</a>
+                        </figcaption>
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-12 mar-bottom30 mix women">
+                  <div class="gallery_image">
+                     <figure class="effect-bubba positionR">
+                        <img src="{% static 'assets/img/gallery/gallery5.jpg' %}" alt="">
+                        <figcaption>
+                           <h2><span class="icon arrows-expand"><a href="">a</a></span></h2>
+                           <a class="fancybox" data-fancybox-group="group" href="{% static 'assets/img/gallery/gallery6.jpg' %}">View more</a>
+                        </figcaption>
+                     </figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </div>
+       </div>
+      </section>
+      <!--//================gallery end=============//-->
+{% endblock sitecontent %}

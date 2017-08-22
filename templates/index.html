@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}StackHouse- Official Website {% endblock title %}
+{% block sitecontent %}
+
+        <!-- -Site content starts -->
+        <section id="slider-section">
+            <div id="main-slider" class="owl-carousel owl-theme slider positionR">
+                {% for slide in slide_image %}
+                <div class="item positionR">
+                    <figure class="slider-image positionR">
+                        <img src="{{ slide.slider_image.url }}" alt=""/>
+                    </figure>
+                    <div class="slider-text positionA text-center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 text-left">
+                                    <div class="vertical_text positionR">
+                                        <h1>Stackshouse</h1>
+                                    </div>
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 text-left">
+                                    <div class="text-prt2 positionR">
+                                        <h1>{{ slide.slider_desc }}
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </section>
+        <!--//================Slider end==============//-->
+        <div class="clear"></div>
+        <!--//================About start==============//-->		
+        <section id="about-section" class="pad-top100 pad-bottom100">
+            <div class="main_aboutus">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 pull-right">
+                            <figure>
+                                <img src="{% static 'assets/img/about/about1.jpg' %}" alt=""/>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="all_section_heading">
+                                <h1>about me</h1>
+                                <h2> <span>Creative</span> Studio</h2>
+                            </div>
+                            <div class="aboutus_content">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the industry's standard dummy text
+                                    ever since the 1500s electronic typesetting.
+                                </p>
+                                <p> When an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book. It has survived not only five centuries,
+                                    but also the leap into electronic typesetting,
+                                </p>
+                                <a href="about.html" class="itg-button">learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//================About end==============//-->
+        <div class="clear"></div>
+        <!--//================service start==============//-->	
+        <section id="service-section">
+            <div class="row1">
+                <div class="col-md-4 col-sm-12 col-xs-12 service_img_box pad-righ">
+                    <div class="row">
+                        <figure class="service_image positionR">
+                            <img src="{% static 'assets/img/about/service1.jpg' %}" alt=""/>
+                        </figure>
+                        <div class="service_content">
+                            <h1>services</h1>
+                            <h2> <span>Our</span> Services</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-12 col-xs-12 service_content_box">
+                    <div class="row">
+                        <div class="border">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="service_box text-center">
+                                    <i class="fa fa-camera" aria-hidden="true"></i>
+                                    <h3> Photo Camera </h3>
+                                    <p>There are many variations passages of 
+                                        Lorem Ipsum available 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 border_box">
+                                <div class="service_box text-center">
+                                    <i class="fa fa-film" aria-hidden="true"></i>
+                                    <h3> Movie Clapper </h3>
+                                    <p>There are many variations passages of 
+                                        Lorem Ipsum available 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="service_box text-center">
+                                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                    <h3> Images Interface </h3>
+                                    <p>There are many variations passages of 
+                                        Lorem Ipsum available 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border2">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="service_box text-center">
+                                    <i class="fa fa-file-video-o" aria-hidden="true"></i>
+                                    <h3> Film Roll </h3>
+                                    <p>There are many variations passages of 
+                                        Lorem Ipsum available 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 border_box">
+                                <div class="service_box text-center">
+                                    <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                                    <h3> Camera Diaphragm </h3>
+                                    <p>There are many variations passages of 
+                                        Lorem Ipsum available 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="service_box text-center">
+                                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                                    <h3> Video Camera </h3>
+                                    <p>There are many variations passages of 
+                                        Lorem Ipsum available 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//================Service end==============//-->
+        <div class="clear"></div>
+        <!--//================Blog start=============//-->	
+        <section id="blog-section" class="pad-top100 pad-bottom80">
+            <div class="container">
+                <div class="row">
+                    <div class="all_heading positionR">
+                        <h1> blog </h1>
+                        <h2> <span>Latest</span> news</h2>
+                    </div>
+                    <div class="blog pad-top50">
+                        <div class="col-md-4 col-sm-12 col-xs-12 mar-bottom30">
+                            <div class="ourbackgound">
+                                <div class="col-md-12 col-sm-6 col-xs-12">
+                                    <div class="row">
+                                        <figure class="blog_image_left positionR">
+                                            <img src="{% static 'assets/img/blog/blog1.jpg' %}" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-6 col-xs-12">
+                                    <div class="our_blog">
+                                        <h3><a href="blog_full.html">Long Established</a></h3>
+                                        <span><a href="" class="blog_admin"><i class="fa fa-user" aria-hidden="true"></i> Admin</a></span>
+                                        <p>Lorem Ipsum is simply dummy text of the rinting and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever sincer they 1500s. Lorem Ipsum is simply dummy text of the rating typesetting industry.
+                                        </p>
+                                        <h5><a href="blog_full.html" class="blog_read">Read more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//================Blog end=============//-->
+        <div class="clear"></div>
+{% endblock sitecontent %}
