@@ -15,17 +15,20 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from updatesite import views
+from blog import views
+from updatesite import views as update_site_views
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.homepage, name='homepage'),
-    url(r'^about', views.about, name='about'),
-    url(r'^show-reel', views.showreel, name='showreel'),
-    url(r'^photo-gallery', views.photogallery, name='photogallery'),
-    url(r'^contact', views.contact, name='contact'),
+    url(r'^$', update_site_views.homepage, name='homepage'),
+    url(r'^about', update_site_views.about, name='about'),
+    url(r'^show-reel', update_site_views.showreel, name='showreel'),
+    url(r'^photo-gallery', update_site_views.photogallery, name='photogallery'),
+    url(r'^allblogs', views.all_blog, name='allblog'),
+    url(r'^singleblog/(?P<blog_id>[0-9]+)/$', views.single_blog, name='single_blog'),
+    url(r'^contact', update_site_views.contact, name='contact'),
 ]
 
 if settings.DEBUG:

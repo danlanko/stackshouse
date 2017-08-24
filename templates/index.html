@@ -158,27 +158,27 @@
                         <h2> <span>Latest</span> news</h2>
                     </div>
                     <div class="blog pad-top50">
+                        {% for blog in index_blog %}
                         <div class="col-md-4 col-sm-12 col-xs-12 mar-bottom30">
                             <div class="ourbackgound">
                                 <div class="col-md-12 col-sm-6 col-xs-12">
                                     <div class="row">
                                         <figure class="blog_image_left positionR">
-                                            <img src="{% static 'assets/img/blog/blog1.jpg' %}" alt="">
+                                            <img style='height: auto; width: auto' src="{{ blog.blog_image.url }}" alt="">
                                         </figure>
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-sm-6 col-xs-12">
                                     <div class="our_blog">
-                                        <h3><a href="blog_full.html">Long Established</a></h3>
+                                        <h3><a href="blog_full.html">{{ blog.blog_title }}</a></h3>
                                         <span><a href="" class="blog_admin"><i class="fa fa-user" aria-hidden="true"></i> Admin</a></span>
-                                        <p>Lorem Ipsum is simply dummy text of the rinting and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever sincer they 1500s. Lorem Ipsum is simply dummy text of the rating typesetting industry.
-                                        </p>
+                                        <p>{{ blog.blog_content|safe }}</p>
                                         <h5><a href="blog_full.html" class="blog_read">Read more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>

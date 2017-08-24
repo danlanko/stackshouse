@@ -83,6 +83,7 @@
                                                 <li><a href="{% url 'about' %}">About</a></li>
                                                 <li><a href="{% url 'showreel' %}">Showreel</a></li>
                                                 <li><a href="{% url 'photogallery' %}">Photo-Gallery</a></li>
+                                                <li><a href="{% url 'allblog' %}">Blogs</a></li>
                                                 <li><a href="{% url 'contact' %}">Contact</a></li>
                                             </ul>
                                         </div>
@@ -171,23 +172,5 @@
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDnJzryw5UTYs4q-8UN4FyTwWIHlxMSYXw'></script>
         <script src="{% static 'assets/js/main.js' %}"></script>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-
-        <script>
-            $(document).ready(function () {
-                $(".popup").hide();
-                $(".openpop").click(function (e) {
-                    e.preventDefault();
-                    $("iframe").attr("src", $(this).attr('href'));
-                    $(".links").fadeOut('slow');
-                    $(".popup").fadeIn('slow');
-                });
-
-                $(".close").click(function () {
-                    $(this).parent().fadeOut("slow");
-                    $(".links").fadeIn("slow");
-                });
-            });
-
-        </script>
     </body>
 </html>
