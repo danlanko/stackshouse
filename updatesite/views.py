@@ -13,12 +13,13 @@ def about(request):
 
 def showreel(request):
     showreel = ShowReel.objects.all()
-
-    return render_to_response('show_reel.html')
+    video_catgory = SetVideoCategory.objects.all()
+    return render_to_response('show_reel.html',{'showreel':showreel,'category':video_catgory})
 
 def photogallery(request):
-
-    return render_to_response('photo_gallery.html')
+    picture = PhotoGallery.objects.all()
+    photo_category = SetPhotoCategory.objects.all()
+    return render_to_response('photo_gallery.html',{'picture':picture, 'photo_category':photo_category})
 
 def contact (request):
 
