@@ -1,4 +1,5 @@
 # stackshouse
-Stackshouse is a creative studio - Developed with Django by danlanko
+Stackshouse is a creative studio - 
+Simple website with Django CMS
 
-NOTE: database connection is MYSQL . you'd have to set up mysql database name 'stack' before running migrations
+
